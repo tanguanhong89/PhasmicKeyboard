@@ -59,14 +59,16 @@ Additional magnets can be used for tenting the keyboard.
     ![alt text](images/magnet.jpg)
 - 60 x kailh choc v1 switches
     ![alt text](images/kailh_choc_v1.jpg)
+- 60 x Geekark low profile keycaps for kailh choc v1 switches
+    ![alt text](images/geekark_lp_keycaps.avif)
 - 60 x 1n4148 diodes
     ![alt text](images/1n4148.jpg)
 - 6 x SS12D00
     ![alt text](images/SS12D00.webp)
 - 2 x RP2040 pico
     ![alt text](images/rp2040_pico.jpg)
-- 2 x usb-a to usb-c adapter
-    ![alt text](images/usbc_adapter.jpg)
+- 2 x usb-c to micro-usb adapter
+    ![alt text](images/usbc_to_microusb.jpg)
 - 2 x 430 grade steel plates(150mm x 120mm x 1.5mm thick)
 - 1 x anti shatter film (to cover the steel plates)
 - 1 x TRRS cable
@@ -75,9 +77,59 @@ Additional magnets can be used for tenting the keyboard.
 - 24 AUG wire (single color is enough)
 
 # 3. Assembly
-## 3.1. Rows
-## 3.2. Thumb clusters
-## 3.3. Columns
-## 3.4. RP2040
-## 3.5. TRRS
-## 3.6. Magnets
+## 3.1. Fastening wires
+One of the more efficient way to secure wire is to insert it through the M3 washer from 1 direction, then M3 screw from the opposite direction as shown below
+![alt text](diagrams/securing_wire.jpg)
+
+## 3.2. Preparing switches
+48 switches are soldered with copper wires on the left pin. These switches are for the columns
+![alt text](images/soldered_switch.jpg)
+
+The remaining 12 switches are **soldered with 30 AUG insulated wires on the left pin** instead.
+
+TODO add image
+
+All switches are soldered with 1 1n4148 diode on the right pin, note the diode direction.
+## 3.3. Magnets
+Insert magnets with same facing poles into 3d printed parts on the same side (eg. all downward facing North pole to be on the left side of each column)
+
+Repeat with opposite side with opposite facing pole
+
+## 3.4. 430 Grade steel plates lamination
+Laminating steel plates is not necessary, but recommended to ensure magnets slide smoothly on the plates, and also to prevent scratching and rust.
+
+Cut the anti-shatter film by tracing loosely, the outline of the metal plate, with a pen knife.
+![rows_left](images/steel_plate_lamination.jpg)
+
+Stick the film on the metal plate, then remove any excess film by tracing the metal plate more precisely. Cutting more precisely after sticking the film is easier as the film does not move around the plate.
+
+
+## 3.5. Rows wiring
+The row wires are supported by a single 24 AUG wire at row 1 that help resists pull tension.
+![rows_left](diagrams/rows_left.jpg)
+![rows_right](diagrams/rows_right.jpg)
+
+- Starting with the first row,connect all 
+![rows_right](diagrams/rows_wiring_actual.jpg)
+![rows_right](images/column_wiring_first.jpg)
+![rows_right](images/column_wiring_intermediate.jpg)
+## 3.6. Thumb clusters wiring
+Thumb clusters must be prepared before column wiring because each column wire on the RP2040 is connected to both the the column wires from the columns and also the thumb clusters.
+![rows_right](diagrams/thumb_cluster_row_wiring.jpg)
+![rows_right](diagrams/thumb_cluster_wiring_row.jpg)
+
+## 3.7. Columns wiring
+![rows_right](diagrams/col_wiring_left.jpg)
+![rows_right](diagrams/col_wiring_right.jpg)
+
+Column wires use 30 AUG sizes.
+
+Lay the wires from the furthest to the closest.
+- for left side, lay column 1 first then column 6 last.
+- for right side, lay column 6 first, then column 1 last.
+TODO add pic
+## 3.8. Securing column switches
+## 3.9. RP2040
+## 3.10. TRRS wiring
+
+# Flashing
