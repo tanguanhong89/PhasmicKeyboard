@@ -32,7 +32,7 @@ Additional magnets can be used for tenting the keyboard.
 [An Internal Link](/stl/col.stl)
 - Thumb cluster x 2
 ![alt text](images/stl/thumb_cluster.jpg)
-[An Internal Link](/stl/col.stl)
+[An Internal Link](stl/thumb_cluster_2x3.stl)
 - RP2040 pico housing bottom x 2
 ![alt text](images/stl/rp2040_btm.jpg)
 [An Internal Link](/stl/rp2040_pico_housing_btm.stl)
@@ -63,7 +63,7 @@ Additional magnets can be used for tenting the keyboard.
     ![alt text](images/geekark_lp_keycaps.avif)
 - 60 x 1n4148 diodes
     ![alt text](images/1n4148.jpg)
-- 6 x SS12D00
+- 6 x SS12D00 (optional)
     ![alt text](images/SS12D00.webp)
 - 2 x RP2040 pico
     ![alt text](images/rp2040_pico.jpg)
@@ -136,6 +136,8 @@ For each column pin hole on the RP2040, solder wires of the same column from the
 Secure the row wires with the switches' diodes, then secure the latter with the M3 screws and washers on the right side of the column housing as seen in the picture above. Note that each M3 screw on the right is also connected to its own row wire.
 
 The column wiring is on the left of the column housing, which is a series of copper wires from the left pins of each switch secured together with another M3 screw and washer combo.
+
+## TODO rp2040 + adapter
 
 ## 3.9. TRRS wiring
 ![rows_right](diagrams/trrs.jpg)
