@@ -127,9 +127,35 @@ Column wires use 30 AUG sizes.
 Lay the wires from the furthest to the closest.
 - for left side, lay column 1 first then column 6 last.
 - for right side, lay column 6 first, then column 1 last.
-TODO add pic
-## 3.8. Securing column switches
-## 3.9. RP2040
-## 3.10. TRRS wiring
 
-# Flashing
+For each column pin hole on the RP2040, solder wires of the same column from the thumb cluster and the column housing together to the RP2040.
+
+## 3.8. Securing column switches
+![rows_right](images/column_switches.jpg)
+
+Secure the row wires with the switches' diodes, then secure the latter with the M3 screws and washers on the right side of the column housing as seen in the picture above. Note that each M3 screw on the right is also connected to its own row wire.
+
+The column wiring is on the left of the column housing, which is a series of copper wires from the left pins of each switch secured together with another M3 screw and washer combo.
+
+## 3.9. TRRS wiring
+![rows_right](diagrams/trrs.jpg)
+![rows_right](images/trrs0.jpg)
+![rows_right](images/trrs1.jpg)
+![rows_right](images/trrs2.jpg)
+
+# 4. Flashing
+Copy the keyboard settings to 
+
+```
+cp -R rev3/ somePath/keebio/nyquist/rev3
+```
+Then flash the firmware into the RP2040 controllers with the following command:
+```
+qmk flash -kb keebio/nyquist/rev3  -km vial  -e CONVERT_TO=promicro_rp2040
+```
+
+# 5. QMK Vial
+Load keymap.vii into Vial
+
+# 6. Fusion 360 CAD file
+phasmic.f3d
