@@ -63,6 +63,8 @@ Additional magnets can be used for tenting the keyboard.
     ![alt text](images/geekark_lp_keycaps.avif)
 - 60 x 1n4148 diodes
     ![alt text](images/1n4148.jpg)
+- 16 x M2 x 6mm (preferably torx)
+- 4 x M2 x 10mm (preferably torx)
 - 6 x SS12D00 (optional)
     ![alt text](images/SS12D00.webp)
 - 2 x RP2040 pico
@@ -99,28 +101,28 @@ Repeat with opposite side with opposite facing pole
 Laminating steel plates is not necessary, but recommended to ensure magnets slide smoothly on the plates, and also to prevent scratching and rust.
 
 Cut the anti-shatter film by tracing loosely, the outline of the metal plate, with a pen knife.
-![rows_left](images/steel_plate_lamination.jpg)
+![alt text](images/steel_plate_lamination.jpg)
 
 Stick the film on the metal plate, then remove any excess film by tracing the metal plate more precisely. Cutting more precisely after sticking the film is easier as the film does not move around the plate.
 
 
 ## 3.5. Rows wiring
 The row wires are supported by a single 24 AUG wire at row 1 that help resists pull tension.
-![rows_left](diagrams/rows_left.jpg)
-![rows_right](diagrams/rows_right.jpg)
+![alt text](diagrams/rows_left.jpg)
+![alt text](diagrams/alt text.jpg)
 
 - Starting with the first row,connect all 
-![rows_right](diagrams/rows_wiring_actual.jpg)
-![rows_right](images/column_wiring_first.jpg)
-![rows_right](images/column_wiring_intermediate.jpg)
+![alt text](diagrams/rows_wiring_actual.jpg)
+![alt text](images/column_wiring_first.jpg)
+![alt text](images/column_wiring_intermediate.jpg)
 ## 3.6. Thumb clusters wiring
 Thumb clusters must be prepared before column wiring because each column wire on the RP2040 is connected to both the the column wires from the columns and also the thumb clusters.
-![rows_right](diagrams/thumb_cluster_row_wiring.jpg)
-![rows_right](diagrams/thumb_cluster_wiring_row.jpg)
+![alt text](diagrams/thumb_cluster_row_wiring.jpg)
+![alt text](diagrams/thumb_cluster_wiring_row.jpg)
 
 ## 3.7. Columns wiring
-![rows_right](diagrams/col_wiring_left.jpg)
-![rows_right](diagrams/col_wiring_right.jpg)
+![alt text](diagrams/col_wiring_left.jpg)
+![alt text](diagrams/col_wiring_right.jpg)
 
 Column wires use 30 AUG sizes.
 
@@ -131,19 +133,26 @@ Lay the wires from the furthest to the closest.
 For each column pin hole on the RP2040, solder wires of the same column from the thumb cluster and the column housing together to the RP2040.
 
 ## 3.8. Securing column switches
-![rows_right](images/column_switches.jpg)
+![alt text](images/column_switches.jpg)
 
 Secure the row wires with the switches' diodes, then secure the latter with the M3 screws and washers on the right side of the column housing as seen in the picture above. Note that each M3 screw on the right is also connected to its own row wire.
 
 The column wiring is on the left of the column housing, which is a series of copper wires from the left pins of each switch secured together with another M3 screw and washer combo.
 
-## TODO rp2040 + adapter
+## 3.9. RP2040+adapter
+Secure rp2040 pico and usbc adapter as follow:
 
-## 3.9. TRRS wiring
-![rows_right](diagrams/trrs.jpg)
-![rows_right](images/trrs0.jpg)
-![rows_right](images/trrs1.jpg)
-![rows_right](images/trrs2.jpg)
+![alt text](images/rp2040_pico_adapter.jpg)
+![alt text](images/rp2040_pico_adapter1.jpg)
+
+## 3.10. TRRS wiring
+![alt text](diagrams/trrs.jpg)
+![alt text](images/trrs0.jpg)
+
+Secure TRRS wires with the extra pin so the wires do not come between TRRS and RP2040 top housing as follows:
+
+![alt text](images/trrs3.jpg)
+![alt text](images/trrs2.jpg)
 
 # 4. Flashing
 Copy the keyboard settings to 
